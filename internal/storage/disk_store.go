@@ -7,12 +7,10 @@ import (
 	"github.com/tanmaydeobhankar/nebulafs/internal/files"
 )
 
-// DiskStore implements Store using the local filesystem
 type DiskStore struct {
 	BaseDir string
 }
 
-// NewDiskStore creates a new DiskStore
 func NewDiskStore(baseDir string) (*DiskStore, error) {
 	if err := os.MkdirAll(baseDir, 0755); err != nil {
 		return nil, err

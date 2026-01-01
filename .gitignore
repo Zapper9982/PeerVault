@@ -1,5 +1,28 @@
-/retrieved_go.mod
-/storage_3000
-/storage_3002
-/storage_4000
-/storage_5001
+# Binaries
+nebulafs
+nebulafs.exe
+*.exe
+*.dll
+*.so
+*.dylib
+
+# Storage Directories (created by running nodes)
+storage*/
+nebulafs_node_test*/
+nebulafs_dist_test*/
+
+# Test Output & Metadata
+*.meta.json
+retrieved_*
+secret.txt
+input.txt
+output.txt
+
+# OS Specific
+.DS_Store
+.vscode/
+.idea/
+
+# Go
+vendor/
+go.work
